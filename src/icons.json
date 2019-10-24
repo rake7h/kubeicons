@@ -1,0 +1,17 @@
+{
+	"sets": [{
+		"category": "compute",
+		"id": "ic1",
+		"icons": [{
+			"name": "pod",
+			"labeled": {
+				"svg": "url...",
+				"png": "url..."
+			},
+			"unlabeled": {
+				"svg": "url...",
+				"png": "url..."
+			}
+		}]
+	}]
+}

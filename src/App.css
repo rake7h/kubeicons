@@ -1,0 +1,63 @@
+
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+* {
+  outline: 0px solid red;
+}
+.App {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 15px;
+}
+.App-header {
+  background-color: #fff;
+  margin:24px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+.app-des {
+  margin-top: 44px;
+}
+.icon-section {
+  margin-top: 22px;
+  margin-bottom: 12px;
+}
+.icon-section-header h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.icon-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+flex-direction: row;
+}
+.icon-card {
+  margin: 22px 22px 0px 0px;
+  border-radius: 4px;
+  border: 1px solid #D8D8D8;
+}
+
+.icon-card-header {
+  background: #D8D8D8;
+  padding: 8px;
+}
+.icon-card-content {
+  display: flex;
+}
+.icon-card-image {
+  height: 55px;
+  width: auto;
+}
+.icon-labeled {
+  border-right: 1px solid #D8D8D8;
+}
+.icon-block {
+  padding: 22px;
+}
