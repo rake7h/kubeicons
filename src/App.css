@@ -1,20 +1,22 @@
-
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+
 * {
   outline: 0px solid red;
 }
+
 .App {
   max-width: 1200px;
   margin: auto;
   padding: 0px 15px;
 }
+
 .App-header {
   background-color: #fff;
-  margin:24px 0px;
+  margin: 24px 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -22,42 +24,111 @@
 .App-link {
   color: #09d3ac;
 }
+
 .app-des {
   margin-top: 44px;
 }
+
 .icon-section {
-  margin-top: 22px;
+  margin-top: 52px;
   margin-bottom: 12px;
 }
+
 .icon-section-header h1 {
   font-size: 18px;
   font-weight: bold;
+  margin: 0px;
 }
+
 .icon-card-wrapper {
   display: flex;
   flex-wrap: wrap;
-flex-direction: row;
+  flex-direction: row;
+  align-items: flex-start;
 }
+
 .icon-card {
   margin: 22px 22px 0px 0px;
   border-radius: 4px;
-  border: 1px solid #D8D8D8;
+  border: 1px solid #C1D5FF;
+  overflow: hidden;
 }
 
 .icon-card-header {
-  background: #D8D8D8;
-  padding: 8px;
+  background: #F4F7FF;
+  border-bottom: 1px solid #C1D5FF;
+  padding: 6px 12px;
 }
+
 .icon-card-content {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .icon-card-image {
-  height: 55px;
+  height: 78px;
   width: auto;
 }
-.icon-labeled {
-  border-right: 1px solid #D8D8D8;
+
+.icon-block:not(:first-child) {
+  border-left: 1px solid #C1D5FF;
 }
+
 .icon-block {
   padding: 22px;
+  position: relative;
+  transition: 0.3s;
+  width: 100%;
+  text-align: center;
+}
+
+.icon-block-download {
+  position: absolute;
+  background: rgba(0, 14, 55, 0.82);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-download {
+  border-radius: 6px;
+  display: inline-block;
+  background: #326CE5;
+  margin-right: 8px;
+  width: 24px;
+  text-align: center;
+}
+
+.btn-download img {
+  vertical-align: text-top;
+  height: 16px;
+}
+
+.download-option {
+  cursor: pointer;
+  border-radius: 6px;
+  padding-right: 6px;
+  transition: 0.1s;
+}
+
+.download-option:hover {
+  background: #326ce58a;
+}
+
+.download-option:not(:first-child) {
+  margin-top: 12px;
+  margin-left: -2px;
+}
+.search-bar {
+  margin:42px 0px;
+}
+.h-600 {
+  max-height: 600px
 }
