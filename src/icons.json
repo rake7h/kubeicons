@@ -1,0 +1,543 @@
+{
+  "icons": [
+    {
+      "name": "compute",
+      "label": "Compute",
+      "icons": [
+        {
+          "name": "pod",
+          "label": "Pod",
+          "description": "Pod is a collection of containers that can run on a host. This resource is created by clients and scheduled onto hosts.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/pod.svg",
+            "png": "icons/png/resources/labeled/pod-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/pod.svg",
+            "png": "icons/png/resources/unlabeled/pod-128.png"
+          }
+        },
+        {
+          "name": "rs",
+          "label": "ReplicaSet",
+          "description": "ReplicaSet ensures that a specified number of pod replicas are running at any given time.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/rs.svg",
+            "png": "icons/png/resources/labeled/rs-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/rs.svg",
+            "png": "icons/svg/resources/unlabeled/rs-128.png"
+          }
+        },
+        {
+          "name": "deploy",
+          "label": "Deployment",
+          "description": "Deployment enables declarative updates for Pods and ReplicaSets.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/deploy.svg",
+            "png": "icons/png/resources/labeled/deploy-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/deploy.svg",
+            "png": "icons/png/resources/unlabeled/deploy-128.png"
+          }
+        },
+        {
+          "name": "ds",
+          "label": "DaemonSet",
+          "description": "DaemonSet represents the configuration of a daemon set.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/ds.svg",
+            "png": "icons/png/resources/labeled/ds-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/ds.svg",
+            "png": "icons/png/resources/unlabeled/ds-128.png"
+          }
+        },
+        {
+          "name": "job",
+          "label": "Job",
+          "description": " Job represents the configuration of a single job.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/job.svg",
+            "png": "icons/png/resources/labeled/job-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/job.svg",
+            "png": "icons/png/resources/unlabeled/job-128.png"
+          }
+        },
+        {
+          "name": "cronjob",
+          "label": "CronJob",
+          "description": "A CronJob manages time based Job, namely: once at a specified point in time repeatedly at a specified ",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/cronjob.svg",
+            "png": "icons/png/resources/labeled/cronjob-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/cronjob.svg",
+            "png": "icons/png/resources/unlabeled/cronjob-128.png"
+          }
+        },
+        {
+          "name": "sts",
+          "label": "StatefulSet",
+          "description": " StatefulSet represents a set of pods with consistent identities. Identities are defined as: network, storage.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/sts.svg",
+            "png": "icons/png/resources/labeled/sts-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/sts.svg",
+            "png": "icons/png/resources/unlabeled/sts-128.png"
+          }
+        }
+      ]
+    },
+    {
+      "name": "storage",
+      "label": "Storage",
+      "icons": [
+        {
+          "name": "pv",
+          "label": "PersistentVolume",
+          "description": "is a storage resource provisioned by an administrator.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/pv.svg",
+            "png": "icons/png/resources/labeled/pv-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/pv.svg",
+            "png": "icons/png/resources/unlabeled/pv-128.png"
+          }
+        },
+        {
+          "name": "pvc",
+          "label": "PersistentVolumeClaim",
+          "description": "PersistentVolumeClaim is a user's request for and claim to a persistent volume.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/pvc.svg",
+            "png": "icons/png/resources/labeled/pvc-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/pvc.svg",
+            "png": "icons/png/resources/unlabeled/pvc-128.png"
+          }
+        },
+        {
+          "name": "sc",
+          "label": "StorageClass",
+          "description": "StorageClass describes the parameters for a class of storage for which PersistentVolumes can be dynamically provisioned.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/sc.svg",
+            "png": "icons/png/resources/labeled/sc-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/sc.svg",
+            "png": "icons/png/resources/unlabeled/sc-128.png"
+          }
+        }
+      ]
+    },
+    {
+      "name": "network",
+      "label": "Network",
+      "icons": [
+        {
+          "name": "ing",
+          "label": "Ingress",
+          "description": "Ingress is a collection of rules that allow inbound connections to reach the endpoints defined by a backend. An Ingress can be configured to give services externally-reachable urls, load balance traffic, terminate SSL, offer name based virtual hosting etc.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/ing.svg",
+            "png": "icons/png/resources/labeled/ing-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/ing.svg",
+            "png": "icons/png/resources/unlabeled/ing-128.png"
+          }
+        },
+        {
+          "name": "svc",
+          "label": "Service",
+          "description": "Service is a named abstraction of software service (for example, mysql) consisting of local port (for example 3306) that the proxy listens on, and the selector that determines which pods will answer requests sent through the proxy.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/svc.svg",
+            "png": "icons/png/resources/labeled/svc-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/svc.svg",
+            "png": "icons/png/resources/unlabeled/svc-128.png"
+          }
+        },
+        {
+          "name": "ep",
+          "label": "Endpoint",
+          "description": "Endpoints is a collection of endpoints that implement the actual service.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/ep.svg",
+            "png": "icons/png/resources/labeled/ep-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/ep.svg",
+            "png": "icons/png/resources/unlabeled/ep-128.png"
+          }
+        },
+        {
+          "name": "netpol",
+          "label": "NetworkPolicy",
+          "description": "NetworkPolicy describes what network traffic is allowed for a set of Pods.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/netpol.svg",
+            "png": "icons/png/resources/labeled/netpol-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/netpol.svg",
+            "png": "icons/png/resources/unlabeled/netpol-128.png"
+          }
+        }
+      ]
+    },
+    {
+      "name": "rbacModel",
+      "label": "RBAC Model",
+      "icons": [
+        {
+          "name": "sa",
+          "label": "ServiceAccount",
+          "description": "binds together: a name, a principal that can be authenticated and authorized * a set of secrets.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/sa.svg",
+            "png": "icons/png/resources/labeled/sa-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/sa.svg",
+            "png": "icons/png/resources/unlabeled/sa-128.png"
+          }
+        },
+        {
+          "name": "user",
+          "label": "User",
+          "description": "Human user of Kubernetes cluster.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/user.svg",
+            "png": "icons/png/resources/labeled/user-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/user.svg",
+            "png": "icons/png/resources/unlabeled/user-128.png"
+          }
+        },
+        {
+          "name": "group",
+          "label": "Group",
+          "description": "Set of Service Accounts or Users.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/group.svg",
+            "png": "icons/png/resources/labeled/group-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/group.svg",
+            "png": "icons/png/resources/unlabeled/group-128.png"
+          }
+        },
+        {
+          "name": "role",
+          "label": "Role",
+          "description": "Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/role.svg",
+            "png": "icons/png/resources/labeled/role-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/role.svg",
+            "png": "icons/png/resources/unlabeled/role-128.png"
+          }
+        },
+        {
+          "name": "c.role",
+          "label": "ClusterRole",
+          "description": " ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding or ClusterRoleBinding.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/c-role.svg",
+            "png": "icons/png/resources/labeled/c-role-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/c-role.svg",
+            "png": "icons/png/resources/unlabeled/c-role-128.png"
+          }
+        },
+        {
+          "name": "crb",
+          "label": "ClusterRoleBinding",
+          "description": "A cluster role binding grants the permissions defined in a role/clusterrole to a user or set of users. Permissions are granted cluster-wide.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/crb.svg",
+            "png": "icons/png/resources/labeled/crb-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/crb.svg",
+            "png": "icons/png/resources/unlabeled/crb-128.png"
+          }
+        },
+        {
+          "name": "rb",
+          "label": "RoleBinding",
+          "description": "A role binding grants the permissions defined in a role/clusterrole to a user or set of users. Permissions are granted within a namespace.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/rb.svg",
+            "png": "icons/png/resources/labeled/rb-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/rb.svg",
+            "png": "icons/png/resources/unlabeled/rb-128.png"
+          }
+        }
+      ]
+    },
+    {
+      "name": "podsConfig",
+      "label": "Pod Configuration",
+      "icons": [
+        {
+          "name": "cm",
+          "label": "ConfigMap",
+          "description": "ConfigMap holds configuration data for pods to consume.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/cm.svg",
+            "png": "icons/png/resources/labeled/cm-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/cm.svg",
+            "png": "icons/png/resources/unlabeled/cm-128.png"
+          }
+        },
+        {
+          "name": "secret",
+          "label": "Secret",
+          "description": "Secret holds secret data of a certain type.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/secret.svg",
+            "png": "icons/png/resources/labeled/secret-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/secret.svg",
+            "png": "icons/png/resources/unlabeled/secret-128.png"
+          }
+        }
+      ]
+    },
+    {
+      "name": "clusterConfig",
+      "label": "Cluster Configuration",
+      "icons": [
+        {
+          "name": "limits",
+          "label": "LimitRange",
+          "description": "LimitRange sets resource usage limits for each kind of resource in a Namespace.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/limits.svg",
+            "png": "icons/png/resources/labeled/limits-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/limits.svg",
+            "png": "icons/png/resources/unlabeled/limits-128.png"
+          }
+        },
+        {
+          "name": "quota",
+          "label": "Quota",
+          "description": "ResourceQuota sets aggregate quota restrictions enforced per namespace.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/quota.svg",
+            "png": "icons/png/resources/labeled/quota-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/quota.svg",
+            "png": "icons/png/resources/unlabeled/quota-128.png"
+          }
+        },
+        {
+          "name": "hpa",
+          "label": "HorizontalPodAutoscaler",
+          "description": "configuration of a horizontal pod autoscaler.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/hpa.svg",
+            "png": "icons/png/resources/labeled/hpa-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/hpa.svg",
+            "png": "icons/png/resources/unlabeled/hpa-128.png"
+          }
+        }
+      ]
+    },
+    {
+      "name": "others",
+      "label": "Others",
+      "icons": [
+        {
+          "name": "crd",
+          "label": "CustomResourceDefinition",
+          "description": "Extension of Kubernetes API.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/crd.svg",
+            "png": "icons/png/resources/labeled/crd-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/crd.svg",
+            "png": "icons/png/resources/unlabeled/crd-128.png"
+          }
+        },
+        {
+          "name": "psp",
+          "label": "PodSecurityPolicy",
+          "description": "governs the ability to make requests that affect the Security Context that will be applied to a pod and container.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/psp.svg",
+            "png": "icons/png/resources/labeled/psp-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/psp.svg",
+            "png": "icons/png/resources/unlabeled/psp-128.png"
+          }
+        }
+      ]
+    },
+    {
+      "name": "infraComponent",
+      "label": "Infrastructure Components",
+      "icons": [
+        {
+          "name": "cluster",
+          "label": "Cluster",
+          "description": "Kubernetes cluster.",
+          "unlabeled": {
+            "svg": "icons/svg/infrastructure_components/unlabeled/cluster.svg",
+            "png": "icons/png/infrastructure_components/unlabeled/cluster-128.png"
+          }
+        },
+        {
+          "name": "master",
+          "label": "Master",
+          "description": "Kubernetes Control Plane.",
+          "labeled": {
+            "svg": "icons/svg/infrastructure_components/labeled/master.svg",
+            "png": "icons/png/infrastructure_components/labeled/master-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/infrastructure_components/unlabeled/master.svg",
+            "png": "icons/png/infrastructure_components/unlabeled/master-128.png"
+          }
+        },
+        {
+          "name": "node",
+          "label": "Node",
+          "description": "Worker machine in Kubernetes cluster.",
+          "labeled": {
+            "svg": "icons/svg/infrastructure_components/labeled/node.svg",
+            "png": "icons/png/infrastructure_components/labeled/node-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/infrastructure_components/unlabeled/node.svg",
+            "png": "icons/png/infrastructure_components/unlabeled/node-128.png"
+          }
+        },
+        {
+          "name": "etcd",
+          "label": "ETCD",
+          "description": "Kubernetes’s backing store.",
+          "labeled": {
+            "svg": "icons/svg/infrastructure_components/labeled/etcd.svg",
+            "png": "icons/png/infrastructure_components/labeled/etcd-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/infrastructure_components/unlabeled/etcd.svg",
+            "png": "icons/png/infrastructure_components/unlabeled/etcd-128.png"
+          }
+        }
+      ]
+    },
+    {
+      "name": "cpComponent",
+      "label": "Control Plane Components",
+      "icons": [
+        {
+          "name": "api",
+          "label": "K8s API Server",
+          "description": "Kubernetes API.",
+          "labeled": {
+            "svg": "icons/svg/control_plane_components/labeled/api.svg",
+            "png": "icons/png/control_plane_components/labeled/api-128.png"
+          }
+        },
+        {
+          "name": "c-m",
+          "label": "Controller Manager",
+          "description": "Kubernetes controller manager.",
+          "labeled": {
+            "svg": "icons/svg/control_plane_components/labeled/c-m.svg",
+            "png": "icons/png/control_plane_components/labeled/c-m-128.png"
+          }
+        },
+        {
+          "name": "sched",
+          "label": "Scheduler",
+          "description": "In charge of ensuring Pods placement.",
+          "labeled": {
+            "svg": "icons/svg/control_plane_components/labeled/sched.svg",
+            "png": "icons/png/control_plane_components/labeled/sched-128.png"
+          }
+        },
+        {
+          "name": "c-c-m",
+          "label": "Cloud Controller Manager",
+          "description": "Optional and External Cloud controller (experimental).",
+          "labeled": {
+            "svg": "icons/svg/control_plane_components/labeled/c-c-m.svg",
+            "png": "icons/png/control_plane_components/labeled/c-c-m-128.png"
+          }
+        },
+        {
+          "name": "kubelet",
+          "label": "Kubelet",
+          "description": "The kubelet is the primary “node agent” that runs on each node.",
+          "labeled": {
+            "svg": "icons/svg/control_plane_components/labeled/kubelet.svg",
+            "png": "icons/png/control_plane_components/labeled/kubelet-128.png"
+          }
+        },
+        {
+          "name": "k-proxy",
+          "label": "Kube-proxy",
+          "description": "The Kubernetes network proxy runs on each node. This reflects services as defined in the Kubernetes API on each node.",
+          "labeled": {
+            "svg": "icons/svg/control_plane_components/labeled/k-proxy.svg",
+            "png": "icons/png/control_plane_components/labeled/k-proxy-128.png"
+          }
+        }
+      ]
+    },
+    {
+      "name": "groupandlinks",
+      "label": "Group and Links",
+      "icons": [
+        {
+          "name": "ns",
+          "label": "Namespace",
+          "description": "  Namespace provides a scope for Names. Use of multiple namespaces is optional.",
+          "labeled": {
+            "svg": "icons/svg/resources/labeled/ns.svg",
+            "png": "icons/png/resources/labeled/ns-128.png"
+          },
+          "unlabeled": {
+            "svg": "icons/svg/resources/unlabeled/ns.svg",
+            "png": "icons/png/resources/unlabeled/ns-128.png"
+          }
+        }
+      ]
+    }
+  ]
+}
