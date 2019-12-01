@@ -1,4 +1,4 @@
-import { icons } from '../test'
+import { icons } from '../icons'
 import Fuse from 'fuse.js'
 import React from 'react'
 
@@ -14,14 +14,12 @@ function useSearch(query) {
     () => {
       if (query.trim()) {
         setResults(fuse.search(query.trim()))
-        console.log('results',fuse.search(query))
       } else {
         setResults(Object.values(icons))
       }
     },
     [query],
   )
-
   return results
 }
 

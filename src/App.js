@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Header from './components/header';
 import IconBox from './components/iconbox';
+
 import useSearch from './utils/useSearch';
 // import Gen from './components/gen';
 import KubeIcons from './icons.json';
@@ -61,9 +62,12 @@ function App() {
         value= {query || ''}
         onChange= {e=>setQuery(e.target.value)}
       />
-      {KubeIcons.sets.map((set)=>
+      {filteredIcons.length > 1 ?
+        (filteredIcons.map((set)=>
          <IconSet iconset={set} key={set.name}/>
-      )}
+      )) :
+      (<p clasName="text-center">We could't find any icons matchnig {`"${query}"`}</p>)
+       }
     </div>
   );
 }
