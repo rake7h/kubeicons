@@ -1,9 +1,12 @@
+/**
+ * json generator for kubeicons
+ */
+ 
 import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 let myStorage = window.localStorage;
-// reformate the jsons and map for new json
 class NewIcon extends React.Component {
   constructor(props) {
    super(props);

@@ -7,7 +7,6 @@ function IconBox(props){
   const [hover, setHover] = useState(false);
 
   async function downloadIcon(icon, name) {
-    console.log('icon',icon)
     let url = PUBLIC_URL+'/'+icon;
       const a= document.createElement("a");
         a.href= url;
@@ -22,11 +21,11 @@ function IconBox(props){
           {hover &&
             <div className="icon-block-download">
                <div className="download-option" role="button" onClick={()=>downloadIcon(props.png, props.name)}>
-                <span className="btn-download"><img src="download.svg" alt=""/></span>
+                <span className="btn-download"><img src="download.svg" alt={props.name}/></span>
                 <span>PNG</span>
                </div>
                <div className="download-option" role="button" onClick={()=>downloadIcon(props.svg, props.name)}>
-                <span className="btn-download"><img src="download.svg" alt=""/></span>
+                <span className="btn-download"><img src="download.svg" alt={props.name}/></span>
                 <span>SVG</span>
                </div>
           </div>
