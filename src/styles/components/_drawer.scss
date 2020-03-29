@@ -1,0 +1,141 @@
+.drawer {
+  animation: drawerFadeIn 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+  height: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 0;
+  z-index: $zindex-drawer;
+
+  &__backdrop {
+    background: rgba($drawer-backdrop-bg, $drawer-backdrop-opacity);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  &__content-wrapper {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+  }
+
+  &__content {
+    background-color: $drawer-content-bg;
+    height: 100%;
+    position: relative;
+    width: 820px;
+  }
+
+  &__content-body {
+    box-shadow: $drawer-content-box-shadow;
+    height: 100%;
+    overflow: auto;
+  }
+}
+
+// Positions
+.drawer-right {
+  right: 0;
+
+  .drawer__content-wrapper {
+    right: 0;
+  }
+}
+
+.drawer-left {
+  left: 0;
+
+  .drawer__content-wrapper {
+    left: 0;
+  }
+}
+
+.drawer-header {
+  align-items: center;
+  background-color: $drawer-header-background-color;
+  border-bottom: $drawer-header-border-width solid $drawer-header-border-color;
+  display: flex;
+  justify-content: start;
+  padding: $drawer-header-padding;
+
+  &__title {
+    color: $drawer-header-title-font-color;
+    font-size: $drawer-header-title-font-size;
+    font-weight: $drawer-header-title-font-weight;
+    padding: $drawer-header-title-padding;
+  }
+
+  &__close-button {
+    cursor: pointer;
+    padding: 12px;
+  }
+}
+
+.drawer-body {
+  padding: $drawer-content-body-padding;
+}
+// Footer for actions(Close, Save)
+
+.drawer-footer {
+  background-color: $drawer-footer-background-color;
+  border-top: $drawer-footer-border-width solid $drawer-footer-border-color;
+  bottom: 0;
+  padding: $drawer-footer-padding;
+  position: absolute;
+  width: 100%;
+}
+
+.drawer > * {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.7, 0.3, 0.1, 1), -webkit-box-shadow 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(0.7, 0.3, 0.1, 1), -webkit-box-shadow 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+  transition: transform 0.3s cubic-bezier(0.7, 0.3, 0.1, 1), box-shadow 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+}
+
+// open style
+
+.drawer-open {
+  height: 100%;
+  width: 100%;
+
+  .drawer__content-wrapper {
+    transform: none;
+  }
+}
+
+@-webkit-keyframes drawerFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes drawerFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fixed-body {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+// usages
+//
+.example-diagram-box{
+  margin: 12px 10px 18px 10px;
+  border-radius: 4px;
+  padding: 12px;
+}
+.example-diagram-box__label {
+  font-size: 28px;
+  color: $blue-grey-800;
+}

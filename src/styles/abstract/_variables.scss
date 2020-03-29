@@ -1,0 +1,34 @@
+//Colors
+//
+$white: #fff;
+$body-color: #253858;
+
+//Z-index
+//
+$zindex-drawer: 1060 !default;
+
+
+// Drawer
+//
+
+$drawer-content-bg: $white !default;
+$drawer-content-box-shadow: 0 0 10px 0 rgba(#ebecf0, 0.5) !default;
+
+$drawer-backdrop-bg: #8993a4 !default;
+$drawer-backdrop-opacity: 0.55 !default;
+
+$drawer-header-background-color: $white !default;
+$drawer-header-border-color: #dfe1e6 !default;
+$drawer-header-title-font-color: $body-color !default;
+$drawer-header-title-font-size: 18px !default;
+$drawer-header-title-font-weight: bold !default;
+$drawer-header-border-width: 2px !default;
+
+$drawer-footer-border-color: $drawer-header-border-color !default;
+$drawer-footer-border-width: 2px !default;
+$drawer-footer-background-color: $white !default;
+$drawer-header-padding: 0 12px !default;
+$drawer-header-title-padding: 14px 0 !default;
+$drawer-footer-padding: 14px 12px !default;
+
+$drawer-content-body-padding: 14px 14px 52px !default;
