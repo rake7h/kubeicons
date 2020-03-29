@@ -1,0 +1,32 @@
+{
+  "examples": [
+    {
+      "label": "Application with configuration",
+      "png": "icons/examples/schemas/Application-with-configuration.png"
+    },
+    {
+      "label": "K8s components startup",
+      "png": "icons/examples/schemas/K8s-components-startup.png"
+    },
+    {
+      "label": "Kube dns",
+      "png": "icons/examples/schemas/kube-dns.png"
+    },
+    {
+      "label": "RBAC model",
+      "png": "icons/examples/schemas/RBAC-model.png"
+    },
+    {
+      "label": "Server implementation",
+      "png": "icons/examples/schemas/Server-implementation.png"
+    },
+    {
+      "label": "StatefulSet Architecture",
+      "png": "icons/examples/schemas/StatefulSet-Architecture.png"
+    },
+    {
+      "label": "std app",
+      "png": "icons/examples/schemas/std-app.png"
+    }
+  ]
+}
